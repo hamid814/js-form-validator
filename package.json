@@ -1,0 +1,16 @@
+{
+  "name": "js-form-validator",
+  "version": "1.0.0",
+  "description": "form validator",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "hg-pages -d ."
+  },
+  "homepage": "https://hamid814.github.io/js-form-validator",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
