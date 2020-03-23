@@ -83,6 +83,10 @@ input:focus {
   border-color: var(--green-color);
 }
 
+.form-control.valid .alert {
+  opacity: 1;
+}
+
 .form-control.invalid input {
   border-color: var(--red-color);
 }

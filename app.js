@@ -16,9 +16,12 @@ function showAlert(input, message) {
 
 function showSuccess(input) {
   const formControl = input.parentElement
+  const alert = formControl.querySelector('.alert')
 
   formControl.classList.remove('invalid')
   formControl.classList.add('valid')
+  
+  alert.innerText = '👍'
 }
 
 function checkEmail(input) {
@@ -51,11 +54,8 @@ function checkLength(input, min, max) {
 }
 
 function checkPasswordsMatch(password, password2) {
-  if(password.value === password2.value) {
-    showSuccess(password)
-    showSuccess(password2)
-  } else {
-    showAlert(password2, 'Passwords must match')
+  if (password.value !== password2.value) {
+    showAlert(password2, 'Passwords do not match');
   }
 }
 
